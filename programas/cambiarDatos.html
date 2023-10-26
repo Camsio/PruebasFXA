@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar datos usuario</title>
+    <link rel="stylesheet" href="../estilos/estilosLoginRegistro.css">
+    <link rel="stylesheet" href="../estilos/cambio datos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-image: url(../img/mudan.png); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+    
+    <nav class="navbar navbar-dark fixed-top" style="background-color: #000000;">
+        <div class="container-fluid">
+            <a class="navbar-brand">Mudanzas</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: #000000;">
+                <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color: white;" >Menu</h4>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" onclick="goBack()">Inicio</a>  <!--  Vinculo a pagina de inicio  -->
+                        </li>
+                    </ul>
+                    
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Inicio.html">Cerrar sesion</a>  <!--  Vinculo a pagina de inicio  -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+<div class="cd">
+        
+    <form action="cambiodatos.php" class="row g-3" method="post" id="formularioo">
+        <h1>Actualizar Datos</h1>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Numero de documento:</label>
+            <input type="text" class="form-control" id="inputEmail4" name="docu">
+        </div>
+        <div class="col-md-6">
+            <label for="fecha">Telefono:</label>
+            <input type="text" class="form-control" id="fecha" name="tel">
+        </div>
+        <div class="col-6">
+            <label for="inputAddress" class="form-label">Direccion:</label>
+            <input type="text" class="form-control" id="inputAddress" name="direc">
+        </div>
+        <div class="col-6">
+            <label for="inputAddress2" class="form-label">Correo:</label>
+            <input type="text" class="form-control" id="inputAddress2" name="correo">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Usuario:</label>
+            <input type="text" class="form-control" id="inputCity" name="usu">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Contraseña:</label>
+            <input type="text" class="form-control" id="inputCity" name="contra">
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+            <button type="button" class="btn btn-danger" onclick="goBack()">volver</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

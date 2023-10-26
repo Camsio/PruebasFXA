@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roles</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="../estilos/estilosCambioRoles.css">
+</head>
+<body style="background-image: url(../img/mudan.png); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+
+  <nav class="navbar navbar-dark fixed-top" style="background-color: #000000;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="InicioAdmin.html">Mudanzas - Administrador</a> <!--  Vinculo a pagina de inicio  -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: #000000;">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="color: white;" >Menu</h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="InicioAdmin.html">Inicio</a>  <!--  Vinculo a pagina de inicio  -->
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cambioRoles.html">Seleccion de roles</a>  <!--  Vinculo a pagina de inicio  -->
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cambiarDatos.html">Modificar datos</a>  <!--  Vinculo a pagina de inicio (cerrar sesion)  -->
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../Inicio.html">Cerrar sesion</a>  <!--  Vinculo a pagina de inicio  -->
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top: 80px; height: 400px;">
+    <div class="row justify-content-center">
+      
+      <form action="guardarCambioRol.php" method="post">
+        <div class="row justify-content-center" style="margin-top: 80px;">
+          <div class="col-6" style="background-color: #dab681; padding: 30px; border: 2px; border-radius: 20px;">
+            <div class="mb-3">
+              <h2>Cambio de rol</h2>
+              <label for="rolselecc" class="form-label">Rol</label>
+              <select class="form-select" id="rolselecc" style="border-color: black;" name="selecRol" required>
+                <option selected>Seleccionar...</option>
+                <option value="0">Administrador</option>
+                <option value="1">Empleado</option>
+                <option value="2">Conductor</option>
+                <option value="3">Cliente</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="documento" class="form-label">Documento</label>
+              <input type="text" class="form-control" id="documento" aria-describedby="emailHelp" style="border-color: black;" name="selecDocumen" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Aceptar</button>
+            <button type="button" class="btn btn-danger" onclick="redirigir()">Cancelar</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  
+  
+
+
+  <script>
+    function redirigir() {
+        // Cambia la ubicación actual del navegador a la página que desees
+        window.location.href = "InicioAdmin.html";
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

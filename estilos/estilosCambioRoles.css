@@ -1,0 +1,48 @@
+body{
+    background: linear-gradient(90deg, rgb(133, 213, 250) 10%, #94b0f0 90%);
+    
+}
+
+#recuadro-principal{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#titulo1{
+    font-size: 250%;
+    padding: 15px;
+}
+
+.texto-campos{
+    font-size: 150%;
+    display: flex;
+    text-align: center;
+    background-color: #94b0f0;
+    justify-content: center;
+    border: 10px ;
+    flex-direction: column;
+}
+.textos{
+    display: flex;
+    flex-direction: row;
+}
+.texto{
+    margin-bottom: 0px;
+}
+
+.recuadro-input{
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.botones{
+    margin-top: 5px;
+    font-size: 60%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+#form-control{
+    border-color: black;
+}

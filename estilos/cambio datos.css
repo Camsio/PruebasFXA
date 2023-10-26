@@ -1,0 +1,29 @@
+
+    .cd{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #dab681;
+        height: 430px;
+        width: 770px;
+        padding: 30px;
+        margin: 30px;
+    }
+
+    .cd{
+        height: 470px;
+        width: 770px;
+        transition: all 0.3s ease-in-out;
+    }
+    .cd {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #dab681;
+    
+    }
+    
+    .cd:hover{
+        transform: scale(1.05);
+    }
+   
